@@ -8,7 +8,9 @@ import store from './redux/store'
 
 function App() {
   return (
-    <Provider store={store}>
+    //outside react router (redux)
+    <Provider store={store}>   
+   {/* inside react router */}
       <BrowserRouter>
         <Navigation />
         <Router />
